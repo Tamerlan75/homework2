@@ -1,10 +1,35 @@
-﻿int AverageDigit (int nam)
+﻿// int AverageDigit (int num)
+// {
+// int dec = num / 10;
+// int average = dec%10;
+// return average;
+// }
+// Console.WriteLine("Input three-digit number");
+// int num = Convert.ToInt32(Console.ReadLine());
+// if(num <100 | num >999) 
+//    Console.WriteLine("Do you input not three-digit number"); 
+
+// int result = AverageDigit(num);
+// Console.WriteLine($"Average digit of {num} -> {result}");
+
+
+int ThirdDigit (int num)
 {
-int dec = nam / 10;
-int average = dec%10;
-return average;
-}
-Console.WriteLine("Input three-digit namber");
-int nam = Convert.ToInt32(Console.ReadLine());
-int result = AverageDigit(nam);
-Console.WriteLine($"Average digit of {nam} -> {result}");
+
+int digit = num%10;      
+
+return digit;
+} 
+Console.WriteLine("Input number");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num>999)
+while (num>999)
+     num = (num/10);
+    
+int result = ThirdDigit ( num);
+
+if (num<100)
+     Console.WriteLine($" {num} -> Третьей цифры нет");
+else
+     Console.WriteLine($" {num} -> {result}"); 
