@@ -13,23 +13,42 @@
 // Console.WriteLine($"Average digit of {num} -> {result}");
 
 
-int ThirdDigit (int num)
+
+// int ThirdDigit (int num)
+// {
+
+// int digit = num%10;      
+
+// return digit;
+// } 
+// Console.WriteLine("Input number");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// if (num>999)
+// while (num>999)
+//      num = (num/10);
+
+// int result = ThirdDigit ( num);
+
+// if (num<100)
+//      Console.WriteLine($" {num} -> Третьей цифры нет");
+// else
+//       Console.WriteLine($" {num} -> {result}");
+
+
+
+void WeekDay (int digit)
 {
-
-int digit = num%10;      
-
-return digit;
-} 
-Console.WriteLine("Input number");
-int num = Convert.ToInt32(Console.ReadLine());
-
-if (num>999)
-while (num>999)
-     num = (num/10);
-    
-int result = ThirdDigit ( num);
-
-if (num<100)
-     Console.WriteLine($" {num} -> Третьей цифры нет");
+if (digit >1 && digit < 7)
+     if (digit >= 6)
+          Console.WriteLine($" {digit} -> Да");
+     else
+          Console.WriteLine($" {digit} -> Нет");
 else
-     Console.WriteLine($" {num} -> {result}"); 
+
+     Console.WriteLine($" {digit} -> Не обозначает день недели");
+
+}
+Console.WriteLine("Input number");
+int digit = Convert.ToInt32(Console.ReadLine());
+  
