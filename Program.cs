@@ -37,18 +37,20 @@
 
 
 
-void WeekDay (int digit)
-{
-if (digit >1 && digit < 7)
-     if (digit >= 6)
-          Console.WriteLine($" {digit} -> Да");
-     else
-          Console.WriteLine($" {digit} -> Нет");
-else
+// string WeekDay (int digit)
+// {
+// if (digit >1 && digit <=7)
+//      if (digit >= 6)
+//           return ("Да");
+//      else
+//           return ("Нет");
+// else
 
-     Console.WriteLine($" {digit} -> Не обозначает день недели");
+//      return($" {digit} -> Не обозначает день недели");
 
-}
-Console.WriteLine("Input number");
-int digit = Convert.ToInt32(Console.ReadLine());
-  
+// }
+// Console.WriteLine("Input number");
+// int digit = Convert.ToInt32(Console.ReadLine());
+
+// string res =  WeekDay(digit);  
+// Console.WriteLine($"  {res}");
